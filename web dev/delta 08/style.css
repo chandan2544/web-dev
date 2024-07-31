@@ -1,0 +1,101 @@
+/* alpha channels  :-
+rgba-here a is alpha set opacity for a color(0-1) */
+
+.rgba{
+    height: 200px;
+    width: 200px;
+    /* background-color: rgba(255, 0,0,0.8); */
+    background-color: rgba(255, 0,0,0.1);
+}
+
+/* opacity :- set opacity for element (0-1) */
+#opacity{
+    background-color: #fcb018;
+    /* opacity: 0; */
+    opacity: 0.8;
+}
+
+/* transition :- defines b/w 2 states of an element */ 
+div{
+    height: 200px;
+    width: 200px;
+    background-color: rgb(128, 255, 0);
+    /* transition-duration: 1s;
+    transition-delay: 1s; */
+    margin-top: 10px;
+    margin: 0 auto;
+  transition: margin-top 2s ease-in 0.1s;
+    
+}
+
+/* transition shorthand
+property_name|duration|timing-functon|delay */
+
+/* div:hover{
+    background-color: black;
+    border-radius: 50%;
+    margin-top: 400px;
+}  */
+
+/* css transform */
+/* section{
+    margin-top: 100px;
+} */
+
+/* div{
+    width: 200px;
+    height: 20px;
+    text-align: center;
+    background-color: #7aa874;
+    border: 2px solid black;
+    margin: 10px;
+} */
+/* div:nth-of-type(2n){
+    background-color: #f7db6a;
+}
+div:nth-of-type(3n){
+    background-color: #ebb02d;
+} */
+/* transform rotate */
+/* .one{
+    transform: rotate(45deg);
+} */
+/* transform scale */
+/* .two{
+    transform: scale(0.5,2);
+} */
+/* transform translate */
+/* .three{
+    transform: translate(100px,100px);
+} */
+/* transform skew */
+/* .four{
+    transform: skew(30deg);
+}
+.five{
+    transform: rotate(30deg) translateX(150px);
+} */
+
+/* box shadow in css */
+.box{
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    background-color: #7aa874;
+    margin: 10px auto;
+    box-shadow: 2px 2px 8px black;
+}
+
+/* background img in css */
+/* background-size : contain/cover/auto; */
+/* contain-repaeat image
+cover-crop image
+auto-stretch image */
+
+.background-img{
+    width: 400px;
+    height: 200px;
+    margin: 10px auto;
+    background-image: url(https://images.unsplash.com/photo-1497250681960-ef046c08a56e?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Z3JlZW58ZW58MHx8MHx8fDA%3D);
+}
+

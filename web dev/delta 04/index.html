@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+   <h2>table</h2>
+    <table>
+        <caption>Food Menu</caption>
+        <!-- table header -->
+        <thead>
+            <tr>
+                <th>Item</th>
+                <th>Price</th>
+            </tr>
+        </thead>
+
+        <!-- table body -->
+        <tbody>
+            <tr>
+                <td>Frooti</td>
+                <td>10</td>
+            </tr>
+            <tr>
+                <td>Samosa</td>
+                <td>12</td>
+            </tr>
+            <tr>
+                <td>Chips</td>
+                <td>20</td>
+            </tr>
+        </tbody>
+
+        <!-- table footer -->
+        <tfoot>
+            <tr>
+                <td>sum</td>
+                <td>42</td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <h2>table colspan & rowspan</h2>
+
+    <table border="black">
+        <caption>Food Menu</caption>
+        <!-- table header -->
+        <thead>
+            <tr>
+                <th rowspan="2">Item</th>
+                <th colspan="2">Price</th>
+            </tr>
+            <tr>
+                <th>INR</th>
+                <th>USD</th>
+            </tr>
+
+        </thead>
+
+        <!-- table body -->
+        <tbody>
+            <tr>
+                <td>Frooti</td>
+                <td>10</td>
+                <td>0.17</td>
+            </tr>
+            <tr>
+                <td>Samosa</td>
+                <td>12</td>
+                <td>0.18</td>
+            </tr>
+            <tr>
+                <td>Chips</td>
+                <td>20</td>
+                <td>0.20</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- form -->
+    <h2>Forms</h2>
+    <!-- input element -->
+    <form action="">username
+        <input type="text"/><br>
+        phone no.
+        <input type="number"/><br>
+        time
+        <input type="time"><br>
+        color
+        <input type="color"><br>
+        <!-- label -->
+         <label>
+            place holder
+        <input type="text" placeholder="type here">
+         </label>
+    </form>
+
+    <!-- button -->
+    <h2>buttons</h2>
+    <form action="/action">
+        <button type="">submit</button>
+        <button type="reset">reset</button>
+        <input type="button" value="click me"/>
+    </form>
+
+    <!-- name Attribute -->
+    <h2>Name Attribute</h2>
+    <form action="/server">
+        <label for="username">username</label>
+        <input 
+        type="text"
+        placeholder="enter username"
+        id="username"
+        name="username"/>
+        <button>submit</button>
+        <!-- http://127.0.0.1:5500/server?username=dfssdfsfsdf -->
+    </form>
+
+    <!-- checkbox -->
+    <h2>checkbox</h2>
+     <form action="/server">
+        <input type="checkbox" id="age" name="age"/>
+        <label for="age">i am 18+</label>
+        <button>submit</button>
+     </form>
+
+     <!-- radio button -->
+     <h2>radio button</h2>
+     <form action="/server">
+
+    <!-- name value should be same -->
+        <div><input type="radio" name="fruit" id="mango">
+            <label for="mango">mango</label>
+            <input type="radio" name="fruit" id="apple">
+            <label for="apple">apple</label>
+          </div>
+          <button>submit</button>
+     </form>
+ 
+     <!-- select dropdown -->
+     <h2>select</h2>
+     <form action="/server">
+        choose your profession :
+        <select name="profession" id="profession">
+            <option>select</option>
+            <option value="student">student</option>
+            <option value="developer">developer</option>
+        </select>
+        <button>submit</button>
+     </form>
+
+     <!-- range -->
+      <h2>Range</h2>
+
+      <form action="/server">
+        <label for="vol">select your volume</label>
+        <input type="range" id="vol" min="0" max="100" name="vol" step="5">
+        <button>submit</button>
+      </form>
+
+        <!-- text area -->
+            <form action="/server">
+                <label for="feedback"> give feedback</label>
+                <textarea name="feedback" id="feedback" rows="10" cols="10" placeholder="write your feedback"></textarea>
+            <button type="submit">submit</button>    
+            </form>
+</body>
+</html>

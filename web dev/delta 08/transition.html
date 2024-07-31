@@ -1,0 +1,36 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* transition :- defines b/w 2 states of an element */ 
+div{
+    height: 200px;
+    width: 200px;
+    background-color: rgb(128, 255, 0);
+    /* transition-duration: 1s;
+    transition-delay: 1s; */
+    margin-top: 10px;
+    margin: 0 auto;
+  transition: margin-top 2s ease-in 0.1s;
+    
+}
+
+/* transition shorthand
+property_name|duration|timing-functon|delay */
+
+div:hover{
+    background-color: black;
+    border-radius: 50%;
+    margin-top: 400px;
+} 
+    </style>
+</head>
+<body>
+    <div></div>
+</body>
+</html>

@@ -1,0 +1,54 @@
+ <!-- creating card hover effect  -->
+
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        h3,p{
+           margin: 5px;
+           text-align: center;
+        }
+        .card{
+            margin: 10px;
+            height: 200px;
+            width: 200px;
+            border: 2px solid black;
+            display: inline-block;
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px black;
+            transition: 1s;
+        }
+        img{
+            width: 100%;
+            border-radius: 5px 5px 0px 0px;
+        } 
+        .desc{
+            padding: 5px;
+        }
+        .card:hover{
+            box-shadow: 4px 8px 16px black;
+        }
+        
+    </style>
+ </head>
+ <body>
+    <div class="card">
+        <img src="https://images.unsplash.com/photo-1568602471122-7832951cc4c5?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bWFufGVufDB8fDB8fHww" alt="man" >
+        <div class="desc">
+            <h3>Rahul Kumar</h3>
+            <p>Data Analyst</p>
+        </div>
+    </div>
+    <div class="card">
+        <img src="https://media.istockphoto.com/id/1566675636/photo/portrait-of-confident-mature-woman-wearing-formalwear-with-arms-crossed-standing-against.webp?b=1&s=170667a&w=0&k=20&c=zuxw-ObOJNxrJfWpIXgtZzLdhqeUdmoqys-vwy3NUCg=" >
+        <div class="desc">
+            <h3>neha sharma</h3>
+            <p>Software Engineer</p>
+        </div>
+    </div>
+ </body>
+ </html>

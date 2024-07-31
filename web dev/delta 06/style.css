@@ -1,0 +1,135 @@
+/* css selector */
+
+/* 1.universal selector */
+*{
+    font-family:'Courier New', Courier, monospace ;
+}
+
+/* 2.element selector */
+/* h3{
+    color: purple ;
+}
+h1{
+    color: #b92b27;
+} */
+
+/* we can also give common style usng this syntax */
+h1,h3{
+    color: #b92b27;
+}
+
+/* 3.id selector */
+#login{
+    background-color: white;
+}
+#signup{
+    background-color: #b92b27;
+    color: white;
+}
+
+/* 4.class selector */
+.upvote{
+    background-color: green;
+    color: aliceblue;
+}
+
+/* 5. Attribute Selctor  */
+div[id="myId"] p{
+    color: green;
+}
+
+/* Attribute Selctor  */
+input[type="text"]{
+    color: red;
+}
+input[type="password"]{
+    color:green;
+}
+input[type]{
+    background-color:ghostwhite;
+}
+
+/* 6.decendent selector */
+/* #myId p{
+    color: green;
+} */
+
+/* 6.decendent selector */
+p a{
+    color: purple;
+    background-color: yellow;
+}
+
+/* 6.decendent selector */
+nav ul li a{
+    color: hotpink;
+}
+
+/* 7.adjacent sibling combinator */
+p + h3{
+    text-decoration: underline;
+}
+
+/* 8.class sibling combinator */
+.upvote + button{
+    background-color: cornflowerblue;
+    color: white;
+}
+
+/* 9.child combinator */
+div > input{
+    background-color: darksalmon;
+}
+
+/* pseudo classes
+1.hover
+2.active
+3.checked
+4.nth-of-type */
+
+/* pseudo classes hover */
+button:hover{
+    background-color: blueviolet; 
+}
+/* pseudo classes hover */
+h3:hover{
+    text-decoration: none;
+}
+/* pseudo classes active */
+button:active{
+    background-color: hotpink; 
+}
+/* pseudo classes checked */
+input[type="radio"]:checked+label{
+color: red;
+font-weight :bold;
+}
+/* pseudo classes nth-of-type */
+div:nth-of-type(2n){
+    background-color: aqua;
+}
+
+/* pseudo element
+1.first-letter
+2.first-line
+3.selection */
+
+h1::first-letter{
+    color: purple;
+}
+p::first-line{
+    color: chartreuse;
+}
+p::selection{
+    color: orange;
+}
+
+/* !important has highest priority than Anything  */
+/* order of specificity is:
+Inline Style > ID Selector > Class or Attribute Selector > Element Selector > Universal Selector */
+
+
+/* inheritance */
+.inheritance{
+    background-color: gold;
+}

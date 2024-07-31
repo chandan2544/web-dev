@@ -1,0 +1,13 @@
+terminal - a text input and iutput environment
+
+commandline - any interface that is used by entering textual commands (gen. windows centric)
+
+terminal - this is a type of commandline (gen. mac centric)
+
+console - a commandline interface used to work with your computer
+
+shell -  a program running on terminal
+
+bash - a popular shell on macOs / linux
+
+z-shell - another shell(default)

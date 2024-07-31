@@ -1,0 +1,145 @@
+<!-- Qs1. Recreate the following table using HTML : -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>practice</title>
+</head>
+<body>
+
+    <h2>Qs1. Recreate the following table using HTML</h2>
+    <table border="black">
+        <caption>Student Information</caption> 
+
+        <tr>
+            <td rowspan="6">info</td>
+            <td rowspan="2">Name</td>
+            <td colspan="2">Address</td>
+        </tr>
+        <tr>
+            <td>City</td>
+            <td>House</td>
+    </tr>
+        <tr>
+            <td>A</td>
+            <td>Delhi</td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <td>B</td>
+            <td>Mumbai</td>
+            <td>2</td>
+        </tr>
+        <tr>
+            <td>C</td>
+            <td>Kolkata</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td>D</td>
+            <td>Pune</td>
+            <td>4</td>
+        </tr>
+    </table>
+
+    <!-- Qs2. Recreate the following form using HTML : -->
+     <h2>Qs2. Recreate the following form using HTML </h2>
+
+     <form action="/action.html">
+        <div>            
+            <label for="text">
+                Name:
+        </label>
+        <input type="text" placeholder="write your name"/>
+    </div>
+      <br>
+        Sex :
+        <input type="radio" name="sex" id="male">
+        <label for="male">
+            Male
+        </label>
+
+        <input type="radio" name="sex" id="female">
+        <label for="female">
+            Female
+        </label>
+<br>
+<br>
+        <div>
+            Country :
+        <select name="country" id="country">
+            <option>select an option</option>
+            <option value="india">india</option>
+            <option value="Russsia">Russsia</option>
+            <option value="italy">italy</option>
+            <option value="France">France</option>
+            <option value="USA">USA</option>
+            <option value="Israel">Israel</option>
+        </select>
+    </div>
+        <br>
+    <div>Message : <br>
+        <textarea name="Message" id="Message">write here </textarea>
+    </div>
+    <br>
+    <div>     <input type="checkbox" id="subscribe" name="subscribe"/>
+
+        <label for="subscribe">subscribe ?</label>
+        <br>
+        <br>
+        <button>submit</button>
+    </div>
+     </form>
+
+
+     <form action="">
+        <h2>Feedback Form</h2>
+        <div>  <label for="text">
+            Name:
+    </label>
+    <input type="text" placeholder="write your name"/></div>
+            <br>
+            <label for="text">
+                Email:
+        </label>
+        <input type="text" placeholder="write your email"/></div>
+<br>
+<br>
+            Message : <br>
+        <textarea name="Message" id="Message">write here </textarea>
+        <br>
+        <br>
+        Rate us our of 5 :
+        <br>
+        <input type="radio" name="rate" id="1">
+        <label for="1">
+            1
+        </label>
+<br>
+        <input type="radio" name="rate" id="2">
+        <label for="2">
+            2
+        </label>
+        <br>
+        <input type="radio" name="rate" id="3">
+        <label for="3">
+            3
+        </label>
+<br>
+        <input type="radio" name="rate" id="4">
+        <label for="4">
+            4
+        </label>
+    <br>
+        <input type="radio" name="rate" id="5">
+        <label for="5">
+            5
+        </label>
+        <br>
+        <br>
+        <button>Send your Message!</button>
+     </form>
+</body>
+</html>

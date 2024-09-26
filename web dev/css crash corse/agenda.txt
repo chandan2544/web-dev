@@ -1,0 +1,40 @@
+----> understanding units
+
+1.px - smallest unit of the screen not suitable for responsive website
+2.% - here we give value as per parent size 
+3.vw / vh   i. vw- viewport width value k according width leta h or responsive hota 
+ii. vh - viewport height value k according height leta h or responsive hota
+
+4.vmax / vmin  i.vmax - its more advance than vw because its follow reponsive till height 
+is less than width 
+ii.vmin - its more advance than vh because its follow reponsive till width 
+is less than height
+
+5.em / rem  i.em - here we give value as per parent size eg if we want 2x size of parent then we write 2em
+ii.rem - 1rem = 16px here r  is root which means here we give value relative to  your screen
+
+----> flexbox
+1.display flex
+2.aligning items in x and y axis
+3.flex direction : row / column
+4.flex : wrap  
+
+note : avoid to use postion : absolute 
+use display : flex
+
+----> CSS Media Queries
+1.min height, min width
+2.min width, max width
+
+----> key points to keep in mind to make website responsive
+1.CSS flex
+2.CSS units
+3.Responsive Typography
+4.Mobile-First Approach 
+5.Flexible image and media
+
+practise! practise! practise!
+
+
+
+

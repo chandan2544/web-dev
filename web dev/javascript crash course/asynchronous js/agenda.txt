@@ -1,0 +1,17 @@
+Asynchronous js 
+  
+settimeout - code kuch der baad chalata h as per given time 
+settimeinterval - code kuch der baad chalta h baar baar ek time interval m 
+fetch api - 
+axios (or other http libraries )
+promises
+
+callbacks 
+promises
+async / await 
+event loop 
+callbacks vs promises vs async/await
+generators
+errors handling in Asynchronous js 
+web workers
+ajax

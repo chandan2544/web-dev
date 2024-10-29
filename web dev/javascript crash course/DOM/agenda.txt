@@ -1,0 +1,22 @@
+aisi js jo aapka webpage pr chejo ko badal sake , us js ko hum DOM kehte h 
+
+Dom manipulation 
+
+1.accessing elements 
+   document.querySelector()
+
+2.modifying elements
+    innerHtml 
+    textcontext 
+
+3.manipulating style and classes 
+    style 
+    classList
+
+3.creating and deleting elements
+    createElement()
+    appendChild()
+    removeChild()
+
+4.Event handling 
+ addEventListener()

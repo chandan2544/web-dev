@@ -1,0 +1,209 @@
+-> 1.js is the language created by branden eick in 20 days
+its  managed by ECMAScript 
+overall development and maintainence of js done by ECMAScript
+
+-> 2.js the dom -> code likhar cheeje bnana seekhna
+
+js has two version both u can used 
+1.es5 - var 
+2.es6 - let , const 
+
+browser is a context api provide some features such as console , alert , prompt 
+
+-> variable and constant
+
+-> compiler and interpreter - convert code into machine code
+js is compiled language
+
+-> jit compiler - interpreter ki shuruaati taakat use krta h and 
+compiler ki running taakat use krta h 
+
+-> 3.window object
+note : js language m kuch chije nhi h jo hum use kr skte h or wo chije hume js se nhi bulki
+browser se milti h, aise saare features jo js ka part nhi h but fir v hum use kr skte h 
+unhe hum dhund skte h ek particular object me jiska naam h window  
+eg - alert,prompt,console
+
+-> datatypes in js 
+1.primitive - number , string , null , boolean , undefined 
+2.non-primitive - array , object , function 
+
+-> spread operator = is used to copy reference value from array, object
+var a=[1,2,3,4,5]
+var b=[...a]
+
+-> conditional statements -
+if
+if / else 
+if / else if 
+
+-> loops 
+for loop
+while loop 
+do while loop 
+foreach loop - used for array
+for in loop
+for of loop
+
+-> function - types in js 
+es5 :-
+ i function statements
+function abc (){}
+
+ii function expression 
+var a = function abc (){}
+
+iii anonymous function
+ function(){} 
+
+es6 - fat arrow function
+i basic fat arrow func 
+var a = () => {}
+
+ii fat arrow with one param
+var a = (p) => {}
+a(5)
+
+iii fat arrow with implicit return 
+var a = () => 35;
+
+note - in js function can be treat as value
+
+-> return - js function jo kuch return nhi krta wo undefined return krta h 
+
+note - undefined is a value , not defined is an error , null is a value 
+
+-> loop with array 
+var a=[1,2,3,4,5]
+
+a.forEach(function (val){
+    console.log(val);
+})
+
+-> object - we can store the value in form of key : value
+var chandan = {
+    naam:"chandan",
+    age:21
+}
+
+
+-> sync - mtlb ek k baad dusra hoga, jb tk ek cmd complete na ho, dusra shuru nhi hoga
+-> async - mtlb saare kaam ek saath shuru krdo jiska ans pehle aajaye uska ans dedena
+
+-> sync code exist in main stack and async code exist in side stack
+jo v main stack pr hota h vo output show krta h & jo v side stack pr hota h vo behind the scene processing kr skta h 
+or jb uski processing complete ho use main stack m la kr chalaya ja skta h  
+
+async code executed when sync code completely executed
+
+-> event loop - is basically middle layer between main stack & side stack who is responsible for interaction b/w them 
+
+-> this keyword - this ki value alag alag hoti h different different conditions m 
+
+i global - window
+
+console.log(this);
+
+ii function - window
+
+function abc (){
+    console.log(this);
+}
+
+iii method (object k ander declared function through function keyword) - object
+
+var obj = {
+    name : function(){  // anonymous func
+        console.log(this);
+    },
+    age:22
+}
+obj.name();
+
+iv func inside method (es5) - window
+
+var obj2 = {
+    sayName : function(){
+        function childfunc(){
+            console.log(this);
+        }
+        childfunc();
+    }
+}
+obj2.sayName();
+
+v func inside method (es6) - object
+
+var obj3 = {
+    sayName : function(){
+        const child = ()=>{
+            console.log(this);
+        }
+        child();
+    }
+}
+obj3.sayName();
+
+vi constructor func m this ki value - new blank object
+
+function add(){
+    console.log(this);
+}
+const ans = new add();
+
+vii event listener m this ki value - that element jispar event listener laga ho
+var a = document.querySelector("button");
+a.addEventListener("click",function(){
+    console.log(this);
+})
+
+-> call , apply , bind 
+ye teen tareeke h function ko call karne k kisi object ko this maan kr
+
+const obj={name:"chandan"}
+function abc(){
+     console.log(this);
+}
+abc(); //window
+abc.call(obj); //obj
+var run = abc.bind(obj) //it will not execute it just store 
+run(); //it will execute
+
+function abcd(a,b,c){
+     console.log(this,a,b,c);
+}
+//first object then array
+abcd.apply(obj,[1,2,3]);
+
+
+-> protoptypal inheritance -  inheritance through protoptype
+function makeHuman(name,age){
+    this.name=name;
+    this.age=age;
+}
+
+makeHuman.protoptype.printMyName = function(){
+    console.log("chandan");
+}
+
+const human1 = new makeHuman ("chandan",22);
+const human2 = new makeHuman ("brock",22);
+
+-> closure - ek function jo return kare doosra function, aur use kare 
+parent function ka koi variable
+
+function demo(){
+    var a=12;
+    return function(){
+        console.log(a);
+    }
+}
+var result = demo();
+result();
+
+-> event delegation = jb aap event listener se kai saare different Elements k event ko handle kr sake 
+// event listener ko parent pr lagao and unko id,class ya fir tag ke basis pr differentiate karke different tast karao
+
+-> higher order function - aisa koi func jo ki ek func ko parameter mein accept karle and/or ek function ko return karde 
+
+-> try and catch - used for error handling 

@@ -1,0 +1,12 @@
+typescript - is a superset of js
+ts - is static typed or js is dynamic typed its a  developmental tool
+ts - is a js with typesafety extension is .tsx
+ts - helps you to write better code with a  more scalable & maintainable code in which 
+chances of errors is much lesser than js
+
+-- install typescript Globally -- 
+1.sudo npm install -g typescript
+2.tsc -v
+
+-> ts file can't be run directly it firstly converted into js
+using   (tsc file_name.ts) then  we we can run it   

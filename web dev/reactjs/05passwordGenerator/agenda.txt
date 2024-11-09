@@ -1,0 +1,44 @@
+useState , useCallback , useEffect , useRef
+
+=> useCallback - is a ReactHook that lets you cache a function definition between re-renders 
+ 
+-> note:- 
+in other words useCallback - used to optimize the code & it just cache the all state and function
+in other words useEffect - just executes or  re-render the setup on every change in dependency
+
+
+-> syntax :-
+useCallback(fn, dependencies)
+
+-> Usage :-
+1.Skipping re-rendering of components
+2.Updating state from a memoized callback
+3.Preventing an Effect from firing too often
+4.Optimizing a custom Hook
+
+=> useEffect is a React Hook that lets you synchronize a component with an external system.
+
+-> syntax :-
+useEffect(setup, dependencies)
+
+-> Usage :-
+Connecting to an external system
+Wrapping Effects in custom Hooks
+Controlling a non-React widget
+Fetching data with Effects
+Specifying reactive dependencies
+Updating state based on previous state from an Effect
+Removing unnecessary object dependencies
+Removing unnecessary function dependencies
+Reading the latest props and state from an Effect
+Displaying different content on the server and the client
+
+=> useRef is a React Hook that lets you reference a value that’s not needed for rendering.
+
+-> syntax :-
+useRef(initialValue)
+
+-> Usage :-
+Referencing a value with a ref
+Manipulating the DOM with a ref
+Avoiding recreating the ref contents

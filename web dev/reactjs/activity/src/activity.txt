@@ -1,0 +1,9 @@
+activity 1 : -
+show a hello message to the user in different colours 
+pass 2 values as props : username & textcolour
+
+activity 2 :- 
+create  a product section inform of cards 
+
+activity 3 :- 
+created a like button using useState

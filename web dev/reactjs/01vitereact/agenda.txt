@@ -1,0 +1,6 @@
+component - function hota h jo jsx return krta h
+jsx - html ki tarah dikhne wala syntax hota with some superpowers
+
+jsx later will be converted on reactElement that is  why we import react from react
+
+react will react when states changes this is moain model of react 

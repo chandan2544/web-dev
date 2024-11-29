@@ -1,0 +1,449 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+    font-family: "Work Sans", sans-serif;
+}
+
+main{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+    padding: 0px 90px;
+    padding-top: 150px;
+    gap: 70px;
+}
+
+.left{
+    height: 100%;
+    width: 45%;
+    /* background-color: aqua; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-bottom: 50px;
+}
+
+.left h1{
+    /* font-size: 120px; */
+    font-size: 6.8vw;
+    font-weight: 400;
+    line-height: 110px;
+    line-height: 7vw;
+}
+
+.bottom-left{
+    height: 40%;
+    width: 100%;
+    /* background-color: yellow; */
+}
+
+.color{
+    /* background-color: blue; */
+    width: fit-content;
+    padding: 5px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    border: 1px solid black;
+}
+
+.color h5{
+    font-size: 1vw; 
+    padding-right: 1.5px;
+    font-weight: 400;
+}
+
+.color1{
+    height: 1vw;
+    width: 1vw;
+    background-color: burlywood;
+    border-radius: 50%;
+    margin:3px;
+}
+
+.color2{
+    height: 1vw;
+    width: 1vw;
+    background-color: brown;
+    border-radius: 50%;
+}
+.left h2{
+    margin-top: 50px;
+    font-size: 2vw;
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+
+.left p{
+    width: 70%;
+    font-size: .8vw;
+    font-weight: 500;
+    line-height: 1vw;
+    color: #444;
+}
+
+.right{
+    height: 90%;
+    width: 33%;
+    /* background-color:crimson; */
+   position: relative;
+}
+
+.right-top
+{
+    /* background-color: aquamarine; */
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+.right-top h4{
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.right-top h5{
+    font-size: 16px;
+}
+.right-top h5 i{
+    color: gold;
+}
+.right img{
+    width: 100%;
+    height: 88%;
+    object-fit: cover;
+    object-position: 0% 40%;
+}
+.black-gola{
+    height: 150px;
+    width: 150px;
+    background: #2f2d2d;
+    color: white;
+    border-radius: 50%;
+    right: -12%;
+    top: 30%;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.black-gola h5{
+    font-size: 18px;
+    font-weight: 400;
+}
+.rotated {
+    position: absolute;
+    /* background-color: red; */
+    font-size: 35px;
+    left: -32%;
+    bottom: 25%;
+    rotate: -90deg;
+    font-weight: 500;
+}
+
+
+@media (max-width:768px){
+
+    main{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        /* background-color: red;  */
+        align-items: flex-start;
+        justify-content: space-between;
+        flex-direction: column;
+        padding:40px;
+        padding-top: 40px;
+        gap: 70px;
+    }
+
+
+.left{
+    height: fit-content;
+    width: 100%;
+    /* background-color: aqua; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-bottom: 50px;
+    gap: 30px;
+}
+
+.left h1{
+   
+    font-size: 17vw;
+    font-weight: 400;
+    line-height: 18.5vw;
+}
+
+.bottom-left{
+    height: 40%;
+    width: 100%;
+    /* background-color: yellow; */
+}
+.color{
+    /* background-color: blue; */
+    width: fit-content;
+    padding: 6px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    border: 1px solid black;
+}
+
+.color h5{
+    font-size: 13px; 
+    padding-right: 5px;
+    font-weight: 500;
+}
+
+.color1{
+    height: 12px;
+    width: 12px;
+    background-color: burlywood;
+    border-radius: 50%;
+    margin:3px;
+}
+
+.color2{
+    height: 12px;
+    width: 12px;
+    background-color: brown;
+    border-radius: 50%;
+}
+.left h2{
+    margin-top: 25px;
+    font-size: 3.2vw;
+    margin-bottom: 8px;
+    font-weight: 500;
+}
+
+.left p{
+    width: 80%;
+    font-size: 2.3vw;
+    font-weight: 500;
+    line-height: 2.7vw;
+    color: #444;
+}
+
+.right{
+    height: 60%;
+    width: 98%;
+    /* background-color:crimson; */
+   position: relative;
+   display: flex;
+   flex-direction: column-reverse;
+}
+
+.right-top
+{
+    /* background-color: aquamarine; */
+    width: 100%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px;
+}
+.right-top h4{
+    font-size: 23px;
+    font-weight: 600;
+}
+
+.right-top h5{
+    font-size: 13px;
+}
+.right-top h5 i{
+    color: gold;
+}
+.right img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 0% 40%;
+    
+}
+.black-gola{
+    height: 125px;
+    width: 125px;
+    background: #2f2d2d;
+    color: white;
+    border-radius: 50%;
+    right: -10%;
+    top: 18%;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.black-gola h5{
+    font-size: 13px;
+    font-weight: 400;
+}
+.rotated {
+    position: absolute;
+    /* background-color: red; */
+    font-size: 35px;
+    left: -39%;
+    bottom: 40%;
+    rotate: -90deg;
+    font-weight: 500;
+}
+
+}
+
+
+@media (min-width:769px) and (max-width:1800px){
+    main{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: flex-end;
+        padding: 0px 90px;
+        padding-top: 150px;
+        gap: 70px;
+        /* background-color: red; */
+    }
+    
+    .left{
+        height: 100%;
+        width: 45%;
+        /* background-color: aqua; */
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding-bottom: 50px;
+    }
+    
+    .left h1{
+        /* font-size: 120px; */
+        font-size:8vw;
+        font-weight: 400;
+        line-height: 8.5vw;
+    }
+    
+    .bottom-left{
+        height: 40%;
+        width: 100%;
+        /* background-color: yellow; */
+    }
+    
+    .color{
+        /* background-color: blue; */
+        width: fit-content;
+        padding: 5px 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50px;
+        border: 1px solid black;
+    }
+    
+    .color h5{
+        font-size: 1.8vw; 
+        padding-right: 3px;
+        font-weight: 400;
+    }
+    
+    .color1{
+        height: 1.5vw;
+        width: 1.5vw;
+        background-color: burlywood;
+        border-radius: 50%;
+        margin:3px;
+    }
+    
+    .color2{
+        height: 1.5vw;
+        width: 1.5vw;
+        background-color: brown;
+        border-radius: 50%;
+    }
+    .left h2{
+        margin-top: 50px;
+        font-size: 2.5vw;
+        margin-bottom: 10px;
+        font-weight: 500;
+    }
+    
+    .left p{
+        width: 80%;
+        font-size: 1.3vw;
+        font-weight: 500;
+        line-height: 1.4vw;
+        color: #444;
+    }
+    
+    .right{
+        height: 100%;
+        width: 40%;
+        /* background-color:crimson; */
+       position: relative;
+    }
+    
+    .right-top
+    {
+        /* background-color: aquamarine; */
+        width: 100%;
+        height: 70px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px;
+    }
+    .right-top h4{
+        font-size: 25px;
+        font-weight: 600;
+    }
+    
+    .right-top h5{
+        font-size: 16px;
+    }
+    .right-top h5 i{
+        color: gold;
+    }
+    .right img{
+        width: 100%;
+        height: 88%;
+        object-fit: cover;
+        object-position: 0% 40%;
+    }
+    .black-gola{
+        height: 120px;
+        width: 120px;
+        background: #2f2d2d;
+        color: white;
+        border-radius: 50%;
+        right: -16%;
+        top: 28%;
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .black-gola h5{
+        font-size: 15px;
+        font-weight: 400;
+    }
+    .rotated {
+        position: absolute;
+        /* background-color: red; */
+        font-size: 35px;
+        left: -32%;
+        bottom: 25%;
+        rotate: -90deg;
+        font-weight: 500;
+    }
+    
+}

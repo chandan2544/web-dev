@@ -1,0 +1,53 @@
+*{
+    margin: 0;padding: 0;box-sizing: border-box;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+}
+
+.box1{
+    height: 300px;
+    width: 300px;
+    background: crimson;
+    position: relative;
+
+    animation-name: box-anime;
+    animation-duration: 2s;
+    animation-delay: 1s;
+
+    /* animation fill mode means it keep final position after animation  */
+    animation-fill-mode: forwards;
+
+    /* how many times animation will run  like 2 ,3 or infinite */
+    animation-iteration-count:infinite;
+    animation-direction: alternate;
+
+    /* animation timing graph like ease-in -> start slow and end fast or ease-out is its reverse
+     or linear mean try to maintain average speed  or ease-in-out means start or end is slow  */
+    animation-timing-function: linear;
+}
+
+.box2{
+    height: 300px;
+    width: 300px;
+    background: violet;
+    position: relative;
+
+    animation-name: box-anime;
+    animation-duration: 2s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes box-anime {
+    from{
+        left: 0;
+    }to{
+        left: 80%;
+    }
+}

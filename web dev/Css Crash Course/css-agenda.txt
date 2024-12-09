@@ -1,0 +1,44 @@
+----- Css Basics -----
+
+width and height
+
+color and bg-color
+
+units - px , % , vw , vh , em , rem
+max-width and max-height
+
+font-family
+
+font-size - try to give value in vw or vh 
+
+line-height
+
+text-align - left,right,center,justify
+
+padding - under se space dena
+
+margin - bahar se space dena
+
+border
+
+display - block (pura row lega), inline (bas utna space lega jitna use jarurat h) , inline-block(dene k baad hum width or height de skte h)
+
+position - absolute , relative , fixed, sticky 
+
+background - color ,linear gradients , image
+
+flex - align-item,justify-content,start,end,space-around,space-evenly,space-between
+
+pseudo-elements
+        ::before
+        ::after
+        ::first-line
+        ::first-letter
+        ::selection - whenever you select the thing whatever changes you want you can do with this
+pseudo-classes
+        :hover
+        :active - used on buttons
+        :focus - used on inputs
+        :nth-child(n)
+
+

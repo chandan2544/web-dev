@@ -1,0 +1,21 @@
+-> understanding units 
+px
+%
+vw, vh
+vmax, vmin
+em, rem
+
+-> Layout of website 
+absolute vs flex
+
+-> flexbox 
+display flex
+aligning items in x and y axis 
+flex directiom
+flex wrap
+
+-> css media queries 
+min height , min width 
+max height , max width
+
+

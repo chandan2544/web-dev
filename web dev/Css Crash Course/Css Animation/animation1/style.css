@@ -1,0 +1,35 @@
+*{
+    margin: 0;padding: 0;box-sizing: border-box;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+}
+
+.box{
+    height: 300px;
+    width: 300px;
+    background-color: red;
+
+    /* to start the animation  */
+    animation-name: box-anime;
+    animation-duration: 2s;
+    animation-delay: 1s;
+    position: relative;
+}
+
+/* to create a animation  */
+@keyframes box-anime {
+    /* intial position */
+    from{
+        left: 0;
+        rotate: 0;
+    }
+    /* final position */
+    to{
+        left: 80%;
+        background-color: blueviolet;
+        rotate: 360deg;
+    }
+}

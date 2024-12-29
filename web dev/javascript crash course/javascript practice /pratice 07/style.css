@@ -1,0 +1,28 @@
+*{
+    margin: 0;padding: 0;box-sizing: border-box;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+}
+
+.downloadCapsule{
+    width: 300px;
+    height: 10px;
+    background-color: #dadada;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform:translate(-50%, -50%) ;
+    border-radius: 100px;
+}
+
+.progress{
+    width: 0%;
+    height: 100%;
+    border-radius: 100px;
+
+    background-color: rgb(8, 195, 8);
+    transition: all cubic-bezier(0.075, 0.82, 0.165, 1) .2s;
+}
